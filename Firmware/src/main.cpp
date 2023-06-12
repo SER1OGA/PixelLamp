@@ -13,8 +13,8 @@
 #include "staticBitmaps.h"
 
 // Wi-Fi
-const char *ssid = "FoxNet 2.4";
-const char *password = "98345458";
+const char *ssid = "";
+const char *password = "";
 
 IPAddress ip(192, 168, 0, 109);
 IPAddress gateway(192, 168, 0, 1);
@@ -39,7 +39,7 @@ void setup()
   FastLED.clear(true);
   FastLED.show();
 
-  // Выполнить подключение к сети
+  // Connect to network
   connectToNetwork();
 }
 
